@@ -1,0 +1,56 @@
+[
+  {
+    "type": "function",
+    "name": "creditclaw_checkout",
+    "description": "Request approval to make a purchase with the user's CreditClaw card. Returns encrypted card data for browser-based form filling.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "merchant_name": {
+          "type": "string",
+          "description": "Name of the merchant (e.g. 'Amazon', 'Best Buy')"
+        },
+        "merchant_url": {
+          "type": "string",
+          "description": "URL of the checkout page"
+        },
+        "item_name": {
+          "type": "string",
+          "description": "What is being purchased"
+        },
+        "amount_cents": {
+          "type": "integer",
+          "description": "Purchase amount in cents (e.g. 1299 for $12.99)"
+        },
+        "category": {
+          "type": "string",
+          "description": "Merchant category (e.g. 'electronics', 'food', 'clothing')"
+        }
+      },
+      "required": ["merchant_name", "item_name", "amount_cents"]
+    }
+  },
+  {
+    "type": "function",
+    "name": "creditclaw_status",
+    "description": "Check the CreditClaw wallet status, spending limits, and card availability.",
+    "parameters": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "type": "function",
+    "name": "creditclaw_transactions",
+    "description": "Get recent transaction history from the CreditClaw wallet.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer",
+          "description": "Number of transactions to return (default 10)"
+        }
+      }
+    }
+  }
+]

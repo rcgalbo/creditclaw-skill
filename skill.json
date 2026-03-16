@@ -1,0 +1,38 @@
+{
+  "name": "creditclaw",
+  "version": "2.1.0",
+  "description": "Give your AI agent a payment card with spending controls, secure checkout, and merchant login management",
+  "homepage": "https://creditclaw.com",
+  "author": "CreditClaw",
+  "license": "MIT",
+  "api_base": "https://creditclaw.com/api/v1",
+  "credentials": {
+    "api_key": {
+      "env_var": "CREDITCLAW_API_KEY",
+      "description": "Your CreditClaw bot API key (starts with r5_live_)",
+      "required": true
+    }
+  },
+  "capabilities": [
+    "checkout",
+    "merchant-auth",
+    "spending-controls",
+    "transaction-history",
+    "2fa-totp"
+  ],
+  "platforms": [
+    "claude-code",
+    "claude-cowork",
+    "openclaw",
+    "moltbook",
+    "zo-computer",
+    "manus"
+  ],
+  "openclaw": {
+    "name": "creditclaw",
+    "description": "Payment card with spending controls for AI agents",
+    "requires": {
+      "env": ["CREDITCLAW_API_KEY"]
+    }
+  }
+}

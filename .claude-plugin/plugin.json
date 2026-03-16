@@ -1,0 +1,23 @@
+{
+  "name": "creditclaw",
+  "description": "Give your AI agent a payment card with spending controls, secure checkout, and merchant login management",
+  "version": "2.1.0",
+  "author": {
+    "name": "CreditClaw",
+    "url": "https://creditclaw.com"
+  },
+  "homepage": "https://creditclaw.com",
+  "repository": "https://github.com/jononovo/creditclaw-skill",
+  "license": "MIT",
+  "keywords": [
+    "payments",
+    "checkout",
+    "shopping",
+    "merchant-auth",
+    "2fa",
+    "spending-controls",
+    "financial",
+    "creditclaw",
+    "agentic-commerce"
+  ]
+}
